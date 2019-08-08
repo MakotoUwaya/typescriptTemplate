@@ -1,0 +1,27 @@
+{
+  "name": "typescript-template",
+  "version": "0.1.0",
+  "main": "dist/app.js",
+  "dependencies": {
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.9",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre.40"
+  },
+  "scripts": {
+    "serve": "ts-node-dev src/app.ts",
+    "serve:watch": "ts-node-dev --respawn src/app.ts",
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc",
+    "start": "node .",
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
